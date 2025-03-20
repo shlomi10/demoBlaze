@@ -9,17 +9,17 @@ A robust and scalable Selenium test automation framework built with Page Object 
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Architecture](#architecture)
-- [Project Structure](#project-structure)
-- [Key Components](#key-components)
-- [Getting Started](#getting-started)
-- [Cross-Browser Testing](#cross-browser-testing)
-- [Running Tests](#running-tests)
-- [Test Reports](#test-reports)
-- [Best Practices Implemented](#best-practices-implemented)
-- [Contributing](#contributing)
+- [Features](#features)  
+- [Technology Stack](#technology-stack)  
+- [Architecture](#architecture)  
+- [Project Structure](#project-structure)  
+- [Key Components](#key-components)  
+- [Getting Started](#getting-started)  
+- [Cross-Browser Testing](#cross-browser-testing)  
+- [Running Tests](#running-tests)  
+- [Test Reports](#test-reports)  
+- [Best Practices Implemented](#best-practices-implemented)  
+- [Contributing](#contributing)  
 
 ## Features
 
