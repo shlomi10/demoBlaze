@@ -9,17 +9,17 @@ A robust and scalable Selenium test automation framework built with Page Object 
 
 ## 📋 Table of Contents
 
-- [Features](#features)  
-- [Technology Stack](#technology-stack)  
-- [Architecture](#architecture)  
-- [Project Structure](#project-structure)  
-- [Key Components](#key-components)  
-- [Getting Started](#getting-started)  
-- [Cross-Browser Testing](#cross-browser-testing)  
-- [Running Tests](#running-tests)  
-- [Test Reports](#test-reports)  
-- [Best Practices Implemented](#best-practices-implemented)  
-- [Contributing](#contributing)  
+- [✨ Features](#features)
+- [🛠️ Technology Stack](#technology-stack)
+- [🏗️ Architecture](#architecture)
+- [📁 Project Structure](#project-structure)
+- [🧩 Key Components](#key-components)
+- [🚀 Getting Started](#getting-started)
+- [🌐 Cross-Browser Testing](#cross-browser-testing)
+- [⚙️ Running Tests](#running-tests)
+- [📊 Test Reports](#test-reports)
+- [💯 Best Practices Implemented](#best-practices-implemented)
+- [👥 Contributing](#contributing)  
 
 ## Features
 
@@ -104,7 +104,7 @@ Contains page objects for each page in the application:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/shlomi10/selenium-pom-framework.git
+git clone https://github.com/shlomi10/demoBlaze.git
 cd selenium-pom-framework
 ```
 
