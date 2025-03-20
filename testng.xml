@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Cross Browser Test Suite" parallel="tests" thread-count="3">
+
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="tests.ScreenshotListener" />
+	</listeners>
+
+	<test name="E-commerce Functional Tests">
+		<parameter name="browser" value="${browser}"/>
+		<classes>
+			<class name="tests.MainRunnerTest" />
+		</classes>
+	</test>
+
+</suite> 
