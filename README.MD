@@ -21,7 +21,7 @@ A robust and scalable Selenium test automation framework built with Page Object 
 - [Best Practices Implemented](#best-practices-implemented)  
 - [Contributing](#contributing)  
 
-## ✨ Features
+##Features
 
 - **Page Object Model**: Clean separation of page elements and actions
 - **Cross-Browser Testing**: Support for different browsers via TestNG parameters
