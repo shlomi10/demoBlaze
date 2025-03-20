@@ -21,7 +21,7 @@ A robust and scalable Selenium test automation framework built with Page Object 
 - [Best Practices Implemented](#best-practices-implemented)
 - [Contributing](#contributing)
 
-## ✨ Features
+## Features
 
 - **Page Object Model**: Clean separation of page elements and actions
 - **Cross-Browser Testing**: Support for different browsers via TestNG parameters
@@ -31,7 +31,7 @@ A robust and scalable Selenium test automation framework built with Page Object 
 - **Modular Design**: Reusable components for UI interactions
 - **Custom Waits**: Smart waiting mechanisms for better stability
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Component               | Technology                       |
 |-------------------------|----------------------------------|
@@ -45,7 +45,7 @@ A robust and scalable Selenium test automation framework built with Page Object 
 | Version Control         | Git                              |
 | CI/CD Integration       | Ready for Jenkins/GitHub Actions |
 
-## 🏗️ Architecture
+## Architecture
 
 This framework is designed using the Page Object Model pattern with the following layers:
 
@@ -54,7 +54,7 @@ This framework is designed using the Page Object Model pattern with the followin
 3. **Utilities Layer**: Contains reusable functions and helpers
 4. **Configuration Layer**: Environment variables and test configurations
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 selenium-pom-framework/
@@ -73,7 +73,7 @@ selenium-pom-framework/
 └── pom.xml                   # Maven Dependencies
 ```
 
-## 🧩 Key Components
+## Key Components
 
 ### Pages Package
 Contains page objects for each page in the application:
@@ -93,7 +93,7 @@ Contains page objects for each page in the application:
 - `MainRunnerTest`: Test suite with annotated test cases
 - `ScreenshotListener`: Screenshot capture on test failures
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Java JDK 20 or higher
@@ -119,7 +119,7 @@ mvn clean install
 SITE_URL=https://www.demoblaze.com/
 ```
 
-## 🌐 Cross-Browser Testing
+## Cross-Browser Testing
 
 The framework supports running tests across multiple browsers using Selenium 4's built-in driver management capabilities.
 
