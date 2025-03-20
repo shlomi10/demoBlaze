@@ -9,17 +9,17 @@ A robust and scalable Selenium test automation framework built with Page Object 
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Architecture](#architecture)
-- [Project Structure](#project-structure)
-- [Key Components](#key-components)
-- [Getting Started](#getting-started)
-- [Cross-Browser Testing](https://github.com/shlomi10/demoBlaze?tab=readme-ov-file#-cross-browser-testing)
-- [Running Tests](#https://github.com/shlomi10/demoBlaze?tab=readme-ov-file#%EF%B8%8F-running-tests)
-- [Test Reports](#https://github.com/shlomi10/demoBlaze?tab=readme-ov-file#-test-reports)
-- [Best Practices Implemented](#https://github.com/shlomi10/demoBlaze?tab=readme-ov-file#-best-practices-implemented)
-- [Contributing](#https://github.com/shlomi10/demoBlaze?tab=readme-ov-file#-contributing)
+- [Features](#features)  
+- [Technology Stack](#technology-stack)  
+- [Architecture](#architecture)  
+- [Project Structure](#project-structure)  
+- [Key Components](#key-components)  
+- [Getting Started](#getting-started)  
+- [Cross-Browser Testing](#cross-browser-testing)  
+- [Running Tests](#running-tests)  
+- [Test Reports](#test-reports)  
+- [Best Practices Implemented](#best-practices-implemented)  
+- [Contributing](#contributing)  
 
 ## ✨ Features
 
