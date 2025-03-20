@@ -149,7 +149,7 @@ mvn clean test -D suiteXmlFile=testng.xml -D browser=firefox
 mvn clean test -D suiteXmlFile=testng.xml -D browser=edge
 ```
 
-## ⚙️ Running Tests
+## Running Tests
 
 ### Using Maven
 ```bash
@@ -166,7 +166,7 @@ mvn clean test -DsuiteXmlFile=testng.xml
 mvn clean test -Dtest=MainRunnerTest#loginTest
 ```
 
-## 📊 Test Reports
+## Test Reports
 
 ### Generate Allure Report
 After running tests, generate the report with:
@@ -180,7 +180,7 @@ This will open the interactive Allure report in your default browser showing:
 - Screenshots of failures
 - Test execution timeline
 
-## 💯 Best Practices Implemented
+## Best Practices Implemented
 
 - **Code Reusability**: Common functions extracted to base classes
 - **Explicit Waits**: No hardcoded sleeps, only conditional waits
@@ -191,7 +191,7 @@ This will open the interactive Allure report in your default browser showing:
 - **Random Data Generation**: Dynamic test data using Faker library
 - **Annotation-Driven Metadata**: Tests decorated with descriptive annotations
 
-## 👥 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
