@@ -1,8 +1,0 @@
-pages\ProductPage.class
-pages\LoginPage.class
-utilities\EnvReader.class
-pages\CartPage.class
-pages\ConfirmationWindow.class
-pages\HomePage.class
-pages\PlaceOrderPage.class
-utilities\BasePageFunctions.class
