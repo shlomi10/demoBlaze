@@ -17,12 +17,6 @@ public class ScreenshotListener implements ITestListener {
 
     private static final String SCREENSHOT_FOLDER = "Reports/screenshots/";
 
-    // Attach screenshot to Allure report
-    @Attachment(value = "Screenshot on Failure", type = "image/png")
-    public byte[] captureScreenshotForAllure(WebDriver driver) {
-        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-    }
-
     // Save screenshot locally
     public void saveScreenshotLocally(WebDriver driver, String testName) {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -44,17 +38,32 @@ public class ScreenshotListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        Object testClass = result.getInstance();
-        WebDriver driver = ((BaseTest) testClass).driver;
+        System.out.println("Test failed: " + result.getName() + " - Taking screenshot");
 
-        if (driver != null) {
-            // Attach screenshot to Allure report
-            captureScreenshotForAllure(driver);
+        try {
+            Object testClass = result.getInstance();
+            if (testClass instanceof BaseTest) {
+                WebDriver driver = ((BaseTest) testClass).driver;
+                if (driver != null) {
+                    // Attach screenshot to Allure report
+                    byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                    attachScreenshotToAllure(screenshot);
 
-            // Save screenshot locally
-            saveScreenshotLocally(driver, result.getName());
-        } else {
-            System.err.println("WebDriver instance is null, unable to capture screenshot.");
+                    // Save screenshot locally
+                    saveScreenshotLocally(driver, result.getName());
+                } else {
+                    System.err.println("Driver is null - cannot take screenshot");
+                }
+            }
+        } catch (Exception e) {
+            System.err.println("Exception taking screenshot: " + e);
+            e.printStackTrace();
         }
+    }
+
+    // Attach screenshot to Allure report
+    @Attachment(value = "Screenshot on Failure", type = "image/png")
+    public byte[] attachScreenshotToAllure(byte[] screenShot) {
+        return screenShot;
     }
 }

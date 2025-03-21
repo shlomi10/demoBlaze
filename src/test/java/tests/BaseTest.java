@@ -7,7 +7,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import pages.*;
-import org.testng.annotations.Listeners;
 
 /**
  * this class represents the base of all tests
@@ -16,7 +15,6 @@ import org.testng.annotations.Listeners;
  * @author Shlomi
  */
 
-@Listeners({ScreenshotListener.class})
 public class BaseTest{
 
     WebDriver driver;
@@ -66,7 +64,14 @@ public class BaseTest{
 
     @AfterMethod(alwaysRun = true)
     public void close() {
-        driver.quit();
+        try {
+            if (driver != null) {
+                driver.quit();
+                driver = null;
+            }
+        } catch (Exception e) {
+            System.err.println("Exception during driver cleanup: " + e.getMessage());
+        }
     }
 
 }
