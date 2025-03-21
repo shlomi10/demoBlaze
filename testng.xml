@@ -4,7 +4,7 @@
 <suite name="Cross Browser Test Suite" parallel="tests" thread-count="3">
 
 	<listeners>
-		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+<!--		<listener class-name="io.qameta.allure.testng.AllureTestNg" />-->
 		<listener class-name="tests.ScreenshotListener" />
 	</listeners>
 
