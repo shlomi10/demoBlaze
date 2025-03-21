@@ -27,7 +27,7 @@ public class MainRunnerTest extends BaseTest {
         loginPage.enterPassword(faker.internet().password());
         loginPage.clickSignUp();
         String actualPopupText = loginPage.getTextFromAlert();
-        String expectedPopupText = "Sign up successful.";
+        String expectedPopupText = "1Sign up successful.";
         Assert.assertEquals(actualPopupText, expectedPopupText, "Wrong popup text");
     }
 
