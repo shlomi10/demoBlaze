@@ -117,8 +117,8 @@ mvn clean install
    Create a `.env` file in `src/test/resources/` with the following:
 ```
 SITE_URL=https://www.demoblaze.com/
-USERNAME=your_USER_name
-PASSWORD=your_password
+USERNAME=your_USER_name (test)
+PASSWORD=your_password (test)
 ```
 
 ## Cross-Browser Testing
