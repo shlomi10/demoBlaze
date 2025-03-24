@@ -39,7 +39,7 @@ A robust and scalable Selenium test automation framework built with Page Object 
 | Testing Framework       | TestNG                           |
 | Build Tool              | Maven                            |
 | Reporting               | Allure Reports                   |
-| Web Automation          | Selenium WebDriver 4.29          |
+| Web Automation          | Selenium WebDriver 4.30          |
 | Test Data Generation    | Java Faker                       |
 | IDE                     | IntelliJ IDEA                    |
 | Version Control         | Git                              |
