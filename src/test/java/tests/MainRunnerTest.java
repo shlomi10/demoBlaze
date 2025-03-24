@@ -38,13 +38,17 @@ public class MainRunnerTest extends BaseTest {
     @Step("User enters username and password, then clicks login")
     @Test(priority = 2, description = "login test")
     public void loginTest() {
-        homePage.getWebSite();
-        homePage.selectLoginBTN();
-        loginPage.enterLoginUsername("test");
-        loginPage.enterLoginPassword("test");
-        loginPage.clickLogin();
+        loginToSite();
         String actualUser = homePage.getCurrentConnectedUser();
         Assert.assertEquals(actualUser, "test", "Wrong username or password");
+    }
+
+    private void loginToSite() {
+        homePage.getWebSite();
+        homePage.selectLoginBTN();
+        loginPage.enterLoginUsername();
+        loginPage.enterLoginPassword();
+        loginPage.clickLogin();
     }
 
     @Severity(SeverityLevel.CRITICAL)
@@ -54,11 +58,7 @@ public class MainRunnerTest extends BaseTest {
     @Step("User selects a specific product and adds it to the shopping cart")
     @Test(priority = 3, description = "add specific product to cart test")
     public void addProductToCartTest() {
-        homePage.getWebSite();
-        homePage.selectLoginBTN();
-        loginPage.enterLoginUsername("test");
-        loginPage.enterLoginPassword("test");
-        loginPage.clickLogin();
+        loginToSite();
         homePage.getCurrentConnectedUser();
         homePage.selectGalaxyS6();
         productPage.addItemToCart();
@@ -79,11 +79,7 @@ public class MainRunnerTest extends BaseTest {
     @Step("User adds a randomized product to the cart and proceeds to checkout to purchase")
     @Test(priority = 4, description = "purchase randomized product test")
     public void purchaseRandomizedProductTest() {
-        homePage.getWebSite();
-        homePage.selectLoginBTN();
-        loginPage.enterLoginUsername("test");
-        loginPage.enterLoginPassword("test");
-        loginPage.clickLogin();
+        loginToSite();
         homePage.getCurrentConnectedUser();
         homePage.selectRandomizeItem();
         productPage.addItemToCart();
@@ -108,11 +104,7 @@ public class MainRunnerTest extends BaseTest {
     @Step("User logs in, clicks the logout button, and verifies the session is terminated")
     @Test(priority = 5, description = "Logout test")
     public void logoutTest() {
-        homePage.getWebSite();
-        homePage.selectLoginBTN();
-        loginPage.enterLoginUsername("test");
-        loginPage.enterLoginPassword("test");
-        loginPage.clickLogin();
+        loginToSite();
         String actualUser = homePage.getCurrentConnectedUser();
         Assert.assertEquals(actualUser, "test", "Wrong username or password");
         homePage.selectLogoutBTN();

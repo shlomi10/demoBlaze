@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utilities.BasePageFunctions;
+import utilities.EnvReader;
 
 /**
  * this class represents the login page
@@ -23,6 +24,8 @@ public class LoginPage extends BasePageFunctions {
     By loginUsernameField = By.id("loginusername");
     By loginPasswordField = By.id("loginpassword");
     By loginBtn = By.xpath("//button[@onclick='logIn()']");
+    String userName;
+    String password;
 
     // enter username
     public boolean enterUsername(String userName) {
@@ -42,15 +45,15 @@ public class LoginPage extends BasePageFunctions {
     }
 
     // enter username in login window
-    public boolean enterLoginUsername(String userName) {
+    public boolean enterLoginUsername() {
         waitForElementToBeVisible(loginUsernameField);
-        return clearAndTypeTextToElem(loginUsernameField, userName);
+        return clearAndTypeTextToElem(loginUsernameField,  EnvReader.getEnvValue("USERNAME"));
     }
 
     // enter password in login window
-    public boolean enterLoginPassword(String password) {
+    public boolean enterLoginPassword() {
         waitForElementToBeVisible(loginPasswordField);
-        return clearAndTypeTextToElem(loginPasswordField, password);
+        return clearAndTypeTextToElem(loginPasswordField,  EnvReader.getEnvValue("PASSWORD"));
     }
 
     // click login
