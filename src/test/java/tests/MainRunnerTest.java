@@ -11,7 +11,7 @@ import org.testng.annotations.*;
  * @author Shlomi
  */
 
-@Listeners({AllureTestNg.class, ScreenshotListener.class})
+@Listeners({AllureTestNg.class})
 public class MainRunnerTest extends BaseTest {
 
     @Severity(SeverityLevel.CRITICAL)
